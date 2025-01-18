@@ -26,18 +26,6 @@ A simple CRUD application for managing books using FastAPI (Python 3.9), SQLite,
      ```bash
      python3 main.py
     this will start the application on http://127.0.0.1:8000/docs (Swagger UI)
-     
-## Project Structure
-fastapi-book-app/
-│
-├── main.py             # FastAPI app and router inclusion
-├── models.py           # Database models
-├── schemas.py          # Pydantic schemas for request validation
-├── services.py         # Business logic and CRUD operations
-├── router.py           # API routes
-├── database.py         # Database connection and session management
-├── auth.py             # Authentication and JWT-related functionality
-├── requirements.txt    # Project dependencies
-└── README.md           # This file
+
 ## Endpoints
 Documented with swagger, accesible at http://127.0.0.1:8000/docs
