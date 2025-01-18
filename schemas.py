@@ -18,11 +18,11 @@ class User(UserBase):
 
 
 class BookBase(BaseModel):
-    title: str
-    author: str
-    summary: Optional[str] = None
-    genre: Optional[str] = None
-    published_date: Optional[str] = None
+    title: str = Field(..., description="The title of the book.")
+    author: str = Field(..., description="The author of the book.")
+    summary: Optional[str] = Field(None, description="A brief description of the book.")
+    genre: Optional[str] = Field(None, description="Book's Genre")
+    published_date: Optional[str] = Field(None, description="Book's published date")
 
 
 class BookCreate(BookBase):
